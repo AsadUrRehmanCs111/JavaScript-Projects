@@ -1,0 +1,59 @@
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("bg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+@media screen and (min-width: 480px) {
+  .location .city,
+  .location .date,
+  .current .weather {
+    font-size: 20px;
+  }
+  .current .temp {
+    font-size: 40px;
+    font-weight: bold;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  .location .city,
+  .location .date,
+  .current .weather {
+    font-size: 25px;
+  }
+  .current .temp {
+    font-size: 45px;
+    font-weight: bold;
+  }
+}
+
+/* Large devices (desktops, 1024px and up) */
+@media screen and (min-width: 1024px) {
+  .location .city,
+  .location .date,
+  .current .weather {
+    font-size: 30px;
+  }
+  .current .temp {
+    font-size: 50px;
+    font-weight: bold;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  .location .city,
+  .location .date,
+  .current .weather {
+    font-size: 40px;
+  }
+  .current .temp {
+    font-size: 50px;
+    font-weight: bold;
+  }
+}
