@@ -1,65 +1,67 @@
-let now = new Date()
-const api = {
-    key: "9a3e6c172f664fef85b185931210501",
-    baseUrl: " https://api.weatherapi.com/v1/current.json"
-}
-
-const searchBox = document.querySelector('.search-box')
-searchBox.addEventListener('keypress', setQuery)
-
-function setQuery(event) {
-    if (event.keyCode == 13) {
-        getResults(searchBox.value)
-        //console.log(searchBox.value)
+document.addEventListener("DOMContentLoaded", function () {
+    let now = new Date()
+    const api = {
+        key: "9a3e6c172f664fef85b185931210501",
+        baseUrl: " https://api.weatherapi.com/v1/current.json"
     }
-}
 
-function getResults(query) {
-    fetch(`${api.baseUrl}?q=${query}&units=matric&key=${api.key}`)
-        .then(weather => {
-            return weather.json();
-        }).then(displayResults)
-}
+    const searchBox = document.querySelector('.search-box')
+    searchBox.addEventListener('keypress', setQuery)
 
-function displayResults(weather) {
-    console.log(weather)
+    function setQuery(event) {
+        if (event.keyCode == 13) {
+            getResults(searchBox.value)
+            //console.log(searchBox.value)
+        }
+    }
 
-    // changing city and CountryName
-    let city = document.querySelector('.location .city')
-    city.innerHTML = `${weather.location.name}, ${weather.location.country}`;
+    function getResults(query) {
+        fetch(`${api.baseUrl}?q=${query}&units=matric&key=${api.key}`)
+            .then(weather => {
+                return weather.json();
+            }).then(displayResults)
+    }
 
-    //Setting current Time and Date
-    let date = document.querySelector('.location .date')
-    date.innerHTML = dateMaker(now)
+    function displayResults(weather) {
+        console.log(weather)
 
-    // Adding Tepurature
-    let temp = document.querySelector('.current .temp');
-    temp.innerHTML = `${weather.current.temp_c}<span>°c</span>`;
+        // changing city and CountryName
+        let city = document.querySelector('.location .city')
+        city.innerHTML = `${weather.location.name}, ${weather.location.country}`;
 
-    // Setting Weather Type
-    let weather_el = document.querySelector('.current .weather');
-    weather_el.innerHTML = weather.current.condition.text;
-}
+        //Setting current Time and Date
+        let date = document.querySelector('.location .date')
+        date.innerHTML = dateMaker(now)
 
-function dateMaker(d) {
-    let months = ["January", "February", "March", "April", "May", "June", "July",
-        "August", "September", "October", "November", "December"]
+        // Adding Tepurature
+        let temp = document.querySelector('.current .temp');
+        temp.innerHTML = `${weather.current.temp_c}<span>°c</span>`;
 
-    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saurday"]
+        // Setting Weather Type
+        let weather_el = document.querySelector('.current .weather');
+        weather_el.innerHTML = weather.current.condition.text;
+    }
 
-    // getting Day using date function 
-    let day = days[d.getDay()]
+    function dateMaker(d) {
+        let months = ["January", "February", "March", "April", "May", "June", "July",
+            "August", "September", "October", "November", "December"]
 
-    // getting months using date function 
-    let month = months[d.getMonth()]
+        let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saurday"]
 
-    // getting date using date function 
-    let date = d.getDate()
+        // getting Day using date function 
+        let day = days[d.getDay()]
 
-    // getting year using date function 
-    let year = d.getFullYear()
+        // getting months using date function 
+        let month = months[d.getMonth()]
+
+        // getting date using date function 
+        let date = d.getDate()
+
+        // getting year using date function 
+        let year = d.getFullYear()
 
 
 
-    return `${day} ${date} ${month},${year}`
-}
+        return `${day} ${date} ${month},${year}`
+    }
+})
