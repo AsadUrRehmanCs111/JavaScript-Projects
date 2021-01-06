@@ -1,9 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
     let now = new Date()
+    
+    //Api 
+    
     const api = {
         key: "9a3e6c172f664fef85b185931210501",
         baseUrl: " https://api.weatherapi.com/v1/current.json"
     }
+    
 
     const searchBox = document.querySelector('.search-box')
     searchBox.addEventListener('keypress', searchedValue)
