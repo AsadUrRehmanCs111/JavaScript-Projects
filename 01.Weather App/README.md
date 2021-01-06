@@ -1,4 +1,4 @@
-# Hi :wave: Beatiful Developers!
+# Hy :wave: Beatiful Developers!
 
 Today I create a new web application with JavaScript (Vanilla JavaScript: No Framework).
 This is JavaScript Beginner Weather App.
