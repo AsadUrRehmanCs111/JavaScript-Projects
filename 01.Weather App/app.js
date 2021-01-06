@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //Api 
     
     const api = {
-        key: "9a3e6c172f664fef85b185931210501",
+        key: "Your_Api Key",
         baseUrl: " https://api.weatherapi.com/v1/current.json"
     }
     
