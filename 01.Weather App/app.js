@@ -6,9 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const searchBox = document.querySelector('.search-box')
-    searchBox.addEventListener('keypress', setQuery)
+    searchBox.addEventListener('keypress', searchedValue)
 
-    function setQuery(event) {
+    function searchedValue(event) {
         if (event.keyCode == 13) {
             getResults(searchBox.value)
             //console.log(searchBox.value)
