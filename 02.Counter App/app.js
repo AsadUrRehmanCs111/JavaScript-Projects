@@ -5,7 +5,7 @@ const value = document.querySelector("#value");
 const btns = document.querySelectorAll(".btn");
 
 btns.forEach(btn => {
-    btn.addEventListener("click", function (e) {
+    btn.addEventListener("click", e => {
         const styles = e.currentTarget.classList;
         console.log(styles)
 
