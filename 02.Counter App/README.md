@@ -5,7 +5,7 @@ Today I create a new web application with JavaScript (Vanilla JavaScript: No Fra
 
 ## :sparkles: Features:
 
-** Let's Talk About Features:
+** Let's Talk About Features: **
 
 1. Increse Button Add value in Counter.
 2. Decrease Value Decrese 1 value in Counter.
