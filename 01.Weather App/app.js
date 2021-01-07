@@ -47,6 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function dateMaker(d) {
+        //months Array
         let months = ["January", "February", "March", "April", "May", "June", "July",
             "August", "September", "October", "November", "December"]
 
