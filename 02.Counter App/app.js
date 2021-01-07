@@ -16,7 +16,7 @@ btns.forEach(btn => {
             count--
         }
         else if (styles.contains("reset")) {
-            window.confirm("Are you Sure to Reset Counter")
+            window.alert("Counter Has Been Reset")
             count = 0
         }
         else {
@@ -30,7 +30,7 @@ btns.forEach(btn => {
             value.style.color = "Red"
         }
         else {
-            value.style.color = "Black"
+            value.style.color = "#fff"
         }
 
         value.textContent = count;

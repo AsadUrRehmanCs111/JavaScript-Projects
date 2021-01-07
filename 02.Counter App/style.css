@@ -1,4 +1,9 @@
 body {
-  background: #cccccc;
-  color: black;
+  background: linear-gradient(rgba(0, 0, 0, 0.987), rgba(0, 0, 0, 0.7)),
+    url("bg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
 }
