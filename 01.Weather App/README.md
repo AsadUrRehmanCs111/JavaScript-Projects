@@ -3,6 +3,10 @@
 Today I create a new web application with JavaScript (Vanilla JavaScript: No Framework).
 This is JavaScript Beginner Weather App.
 
+
+<img src="https://user-images.githubusercontent.com/55739556/103717145-8bb68880-4fe6-11eb-8825-492a834bb97e.PNG" height="10%" width="100%">
+
+
 To do build this app, You must know the basics in JavaScript and HTML, like JavaScript Objects, functions, If statements, ... etc
 
 The only difficulty you might face, is how to work with an API using JavaScript? Just go and learn it'sfrom [The Coding Train
