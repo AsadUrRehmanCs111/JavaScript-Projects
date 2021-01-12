@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background: rgb(238, 174, 202);
+  background: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(245, 245, 245, 1) 100%
+  );
+  font-family: Indie Flower;
+}
+.container {
+  padding: 10px;
+  width: 380px;
+  margin: 0 auto;
+}
+.header {
+  width: 380px;
+  height: 200px;
+  background-image: url("bg.jpg");
+  background-size: 100% 100%;
+  border-radius: 15px 15px 0 0;
+  position: relative;
+}
+.clearStorage {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.clearStorage i {
+  font-size: 30px;
+  color: #000;
+}
+.clearStorage i:hover {
+  cursor: pointer;
+  text-shadow: 2px 3px 6px #000;
+  transform: rotate(45deg);
+}
+.date {
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  color: #000;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.content {
+  width: 380px;
+  height: 350px;
+  max-height: 350px;
+  background-color: #fff;
+  overflow: auto;
+}
+
+.content ul {
+  padding: 0;
+  margin: 0;
+}
+.item {
+  width: 380px;
+  height: 45px;
+  min-height: 45px;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.item i.complete {
+  position: absolute;
+  font-size: 25px;
+  padding-left: 5px;
+  left: 15px;
+  top: 10px;
+}
+.item i.complete:hover {
+  cursor: pointer;
+  color: #6eb200;
+}
+.fa-check-circle {
+  color: #6eb200;
+}
+.item p.text {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+  left: 50px;
+  top: 5px;
+  background-color: #fff;
+  max-width: 285px;
+}
+.lineThrough {
+  text-decoration: line-through;
+  color: #ccc;
+}
+.item i.delete {
+  position: absolute;
+  font-size: 25px;
+  right: 15px;
+  top: 10px;
+}
+.item i.delete:hover {
+  color: #af0000;
+  cursor: pointer;
+}
+
+/* ------------ add item ------------ */
+.add-items {
+  position: relative;
+  width: 380px;
+  height: 60px;
+  background-color: #fff;
+  padding: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.add-items i {
+  position: absolute;
+  font-size: 35px;
+  color: #4162f6;
+}
+
+.add-items #add-item {
+  position: absolute;
+  left: 50px;
+  height: 40px;
+  width: 310px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  padding-left: 10px;
+}
