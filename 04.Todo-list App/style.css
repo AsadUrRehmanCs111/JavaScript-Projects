@@ -5,12 +5,7 @@
 body {
   padding: 0;
   margin: 0;
-  background: rgb(238, 174, 202);
-  background: linear-gradient(
-    90deg,
-    rgba(238, 174, 202, 1) 0%,
-    rgba(245, 245, 245, 1) 100%
-  );
+  background-color: black;
   font-family: Indie Flower;
 }
 .container {
@@ -23,7 +18,7 @@ body {
   height: 200px;
   background-image: url("bg.jpg");
   background-size: 100% 100%;
-  border-radius: 15px 15px 0 0;
+  border-radius: 30px 30px 0px 0px;
   position: relative;
 }
 .clearStorage {
@@ -121,6 +116,7 @@ body {
   background-color: #fff;
   padding: 10px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 30px 30px;
 }
 .add-items i {
   position: absolute;
