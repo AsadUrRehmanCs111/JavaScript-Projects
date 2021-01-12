@@ -5,11 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=
     , initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
     <title>To do App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
-    <h1>To DO</h1>
+    <div class="container">
+        <div class="header">
+            <div class="clearStorage">
+                <i class="fas fa-retweet"></i>
+            </div>
+            <div class="date">
+                <p>20 -11- 2021</p>
+            </div>
+        </div>
+        <div class="content">
+            <ul id="list">
+                <li class="item">
+                    <i class="far fa-circle complete"></i>
+                    <p class="text">Coffe Shop</p>
+                    <i class="fas fa-trash delete"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="add-items">
+            <i class="fas fa-plus-circle"></i>
+            <input type="text" id="add-item" placeholder="ADD TO-DO">
+        </div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
