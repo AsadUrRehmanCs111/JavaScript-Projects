@@ -118,7 +118,7 @@ function completeTodo(element) {
     element.classList.toggle(unCheck);
     element.parentNode.querySelector(".text").classList.toggle(line);
 
-    list[element.id].done = list[element.id].done ? true : false;
+    list[element.id].done = list[element.id].done ? false : true;
 }
 
 // remove todo 
